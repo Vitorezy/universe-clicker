@@ -20,40 +20,64 @@
     <div id="obj_clicker" onclick="obj_click()"> </div>
     <span id="campo_pontuação">  </span>
     <span id="campo_multiplicador">  </span>
-    <div id="loja" onmouseleave="fechar_loja()"> 
+    <div id="aviso">
+        <img class="estrelas_aviso" src="imagens/icons8-estrela-96.png"> 
+        <img class="estrelas_aviso" src="imagens/icons8-estrela-96.png"> 
+        <img class="estrelas_aviso" src="imagens/icons8-estrela-96.png"> 
+        <img class="estrelas_aviso" src="imagens/icons8-estrela-96.png"> 
+        <img class="estrelas_aviso" src="imagens/icons8-estrela-96.png"> 
+        <div id="aviso_texto"> 
+            <span name="enunciado_texto_aviso" class="avisos_texto"> Cada clique aumenta levemente o seu multiplicador. </span>
+            <span name="enunciado_texto_aviso" class="avisos_texto"> você pode usar a Barra de espaço para clicar. </span>
+            <span name="enunciado_texto_aviso" class="avisos_texto"> o progresso NÃO ficará salvo </span>
+            <span name="enunciado_texto_aviso" class="avisos_texto"> Programação criada por: <a href="https://github.com/Vitorezy" target="_blank">  github.com/Vitorezy </a> </span>
+            <span name="enunciado_texto_aviso" class="avisos_texto"> Divirta-se! </span>
+         </div>
+
+        <input id="começar" type="button" value="Entendido! Iniciar." onclick="começar()">     
+    </div>
+    <div id="loja" onmouseleave="fechar_loja()">  
+            <Select id="escolher_tipo_item" onclick="selecionador()">
+                <option value="Melhorias" selected> Melhorias</option>
+                <option value="Cosméticos"> Cosméticos</option>
+            </Select>
+
         <span class="span_loja"> LOJA </span>
         <div id="container_itens_loja"> 
-            <div id="item1" class="itens_loja" onclick="item_multiadd1()"> 
-                <span id="span_item1" class="escrita_item_loja">Multiplicador + 1 <br>Preço: 100 pontos</span>
+            
+            <div id="item1" class="itens_loja" onclick="item_1()"> 
+                <span id="span_item1" class="escrita_item_loja"></span>
             </div>
             <div id="item2" class="itens_loja">
-                <span class="escrita_item_loja">Multiplicador + 1 <br> Preço: 100 pontos</span>
+                <span id="span_item2" class="escrita_item_loja"></span>
             </div>
             <div id="item3" class="itens_loja">
-                <span class="escrita_item_loja">Multiplicador + 1 <br> Preço: 100 pontos</span>
+                <span id="span_item3" class="escrita_item_loja">Multiplicador + 1 <br> Preço: 100 pontos</span>
             </div>
             <div id="item4" class="itens_loja">
-                <span class="escrita_item_loja">Multiplicador + 1 <br> Preço: 100 pontos</span>
+                <span id="span_item4" class="escrita_item_loja">Multiplicador + 1 <br> Preço: 100 pontos</span>
             </div>
             <div id="item5" class="itens_loja">
-                <span class="escrita_item_loja">Multiplicador + 1 <br> Preço: 100 pontos</span>
+                <span id="span_item5" class="escrita_item_loja">Multiplicador + 1 <br> Preço: 100 pontos</span>
             </div>
             <div id="item6" class="itens_loja">
-                <span class="escrita_item_loja">Multiplicador + 1 <br> Preço: 100 pontos</span>
+                <span id="span_item6" class="escrita_item_loja">Multiplicador + 1 <br> Preço: 100 pontos</span>
             </div>
             <div id="item7" class="itens_loja">
-                <span class="escrita_item_loja">Multiplicador + 1 <br> Preço: 100 pontos</span>
+                <span id="span_item7" class="escrita_item_loja">Multiplicador + 1 <br> Preço: 100 pontos</span>
             </div>
             <div id="item8" class="itens_loja">
-                <span class="escrita_item_loja">Multiplicador + 1 <br> Preço: 100 pontos</span>
+                <span id="span_item8" class="escrita_item_loja">Multiplicador + 1 <br> Preço: 100 pontos</span>
             </div>
             <div id="item9" class="itens_loja">
-                <span class="escrita_item_loja">Multiplicador + 1 <br> Preço: 100 pontos</span>
+                <span id="span_item9" class="escrita_item_loja">Multiplicador + 1 <br> Preço: 100 pontos</span>
             </div>
             <div id="item10" class="itens_loja">
-                <span class="escrita_item_loja">Multiplicador + 1 <br> Preço: 100 pontos</span> 
+                <span id="span_item10" class="escrita_item_loja">Multiplicador + 1 <br> Preço: 100 pontos</span> 
+
             </div>
         </div>
     </div>
+            <img id="terra_cosmético" src="imagens/terra_cosmético.png"> 
 </body>
 </html>
